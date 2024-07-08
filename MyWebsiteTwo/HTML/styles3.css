@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EDEDED;
+}
+.sidebar {
+    width: 200px;
+    background-color: #B18FCF;
+    position: fixed;
+    height: 100%;
+    padding-top: 20px;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    background-color: #e1baf0;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    justify-content: space-between;
+}
+.wlogo{
+    width: 40px;
+    height: 30px;
+    background-color: #a264ba;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.work h1{
+    color: #a264ba;
+    margin: 0;
+    font-size: 24px;
+}
+.sidebar a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+}
+.sidebar a:hover {
+    background-color: #7463A4;
+}
+.sidebar .active{
+    background-color: #734c93;
+}
+.account{
+    align-items: center;
+    margin-top: 196%;
+}
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B18FCF;
+    color: #fff;
+    padding: 15px;
+}
+input.searchdept{
+    margin-left: 1210px;
+}
+.header input {
+    padding: 5px;
+    font-size: 16px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ac7fb9;
+}
+th {
+    background-color: #f1eff2;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.pagination button {
+    background-color: #B18FCF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.pagination button:hover {
+    background-color: #7463A4;
+}

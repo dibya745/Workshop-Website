@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="stylesheet" href="styles5.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <div class="heading">
+        <div class="wlogo">
+            <span>W</span>
+        </div>
+        <div class="work">
+            <h1>Workforce</h1>
+        </div>
+    </div>
+    <nav>
+    <a href="FirstPage.html">Home</a>
+    <a href="SecondPage.html">Customers</a>
+    <a href="ThirdPage.html">Departments</a>
+    <a href="FourthPage.html">Media</a>
+    </nav>
+    <div class="account">
+        <a href="FifthPage.html" class="active">My Account</a>
+    </div>
+</div>
+<div class="header">
+    <input type="text" placeholder="Search in Customers" class="searchcus">
+</div>
+<div class="content">
+    <div class="account-section">
+        
+        <form action="javascript:submitForm()" onsubmit="return validate()">
+
+        <label for="profile-image-input"></label>
+        <div class="image-edit">
+        <img src="image1.jpg" alt="Profile Picture"  id="profile-image-input">
+        <button type="button" class="edit-btn" onclick="editImage()">&#x0270F;</button>
+        </div>
+
+        <label for="name">Name</label>
+        <div>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+            <button type="button" class="edit-btn" onclick="editName('name')">&#x0270F;</button>
+        </div>
+
+        <label for="email">Email</label>
+        <div>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+            <button type="button" class="edit-btn" onclick="editEmail('email')">&#x0270F;</button>
+        </div>
+
+        <label for="phone">Phone Number</label>
+        <div>
+            <input type="tel" id="phone" name="phone" placeholder="9134837948" required>
+            <button type="button" class="edit-btn" onclick="editPhone('phone')">&#x0270F;</button>
+        </div>
+
+        <label for="dob">Date Of Birth</label>
+        <div>
+            <input type="date" id="dob" name="dob"  required>
+            <button type="button" class="edit-btn" onclick="editDob('dob')">&#x0270F;</button>
+        </div>
+
+        <div class="actions">
+            <button class="save-btn" onclick="saveChanges()">SAVE</button>
+            <button class="cancel-btn" onclick="cancelChanges()">CANCEL</button>
+        </div>
+        </form>
+    </div>
+</div>
+
+<script>
+        function editName() {
+    const currentName = document.getElementById('name');
+    const newName = prompt("Please Enter Your Name", currentName.value);
+    if (newName) {
+      currentName.value = newName;
+    }
+  }
+  function editEmail() {
+
+    let currentName = document.getElementById('email').value;
+    let newName = prompt("Please enter your new email-id:", currentName);
+    if (newName) {
+      document.getElementById('email').value = newName;
+    }
+  }
+  function editPhone() {
+    let currentName = document.getElementById('phone').value;
+    let newName = prompt("Please enter your new phone-no:", currentName);
+    if (newName) {
+      document.getElementById('phone').value = newName;
+    }
+  }
+  function editDob() {
+    let currentName = document.getElementById('dob');
+    if (currentName) {
+      window.alert("Please select your new Dob");
+    }
+  }
+  function saveChanges(){
+    window.alert("Changes have been updated");
+  }
+  function editImage() {
+    prompt("Please enter your image type:");
+  }
+  function cancelChanges(){
+    window.alert('Changes canceled.');
+  }   
+</script>
+
+</body>
+</html>

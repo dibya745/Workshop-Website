@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+.sidebar {
+    width: 200px;
+    background-color: #d3b4e3;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    background-color: #e1baf0;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    justify-content: space-between;
+}
+.wlogo{
+    height: 40px;
+    width: 50px;
+    background-color: #a264ba;
+    border-radius: 50%;
+    align-items:center;
+    justify-content:center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 10px;
+    display: flex;
+}
+.work h1{
+    color: #a264ba;
+    font-size: 24px;
+
+}
+.sidebar a {
+    display: block;
+    color: #333;
+    padding: 16px;
+    text-decoration: none;
+    text-align: left;
+    font-weight: bold;
+}
+.sidebar a:hover {
+    background-color: #bca2d8;
+}
+.sidebar .active {
+    background-color: #a987c9;
+}
+.account{
+    align-items: center;
+    margin-top: 170%;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B18FCF;
+    color: #ed7878;
+    padding: 15px;
+}
+input.searchcus{
+    margin-left: 1210px; 
+}
+.header input {
+    padding: 5px;
+    font-size: 16px;
+}
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+.account-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.account-section img {
+    display: block;
+    margin-right: 30px;
+    border-radius: 40px;
+    width: 200px;
+    height: 200px;
+}
+
+.account-section h2 {
+    text-align: center;
+    color: #333;
+}
+.account-section label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.account-section input {
+    width: 60%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.account-section .edit-btn {
+    background: none;
+    border: none;
+    margin-right: 10px;
+}
+.account-section .actions {
+    text-align: center;
+    margin-top: 20px;
+}
+.account-section .actions button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.account-section .actions .save-btn {
+    background-color: #4CAF50;
+    color: #fff;
+}
+.account-section .actions .cancel-btn {
+    background-color: #f44336;
+    color: #fff;
+}

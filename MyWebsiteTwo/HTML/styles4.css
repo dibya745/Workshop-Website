@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+.sidebar {
+    width: 200px;
+    background-color: #d3b4e3;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    background-color: #e1baf0;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    justify-content: space-between;
+
+}
+.wlogo{
+
+    height: 30px;
+    width: 40px;
+    background-color: #a264ba;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.work h1{
+    color: #a264ba;
+    font-size: 24px;
+
+}
+.sidebar a {
+    display: block;
+    color: #333;
+    padding: 16px;
+    text-decoration: none;
+    text-align: left;
+    font-weight: bold;
+}
+.sidebar a:hover {
+    background-color: #bca2d8;
+}
+.sidebar .active {
+    background-color: #a987c9;
+}
+.account{
+    align-items: center;
+    margin-top: 170%;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B18FCF;
+    color: #fff;
+    padding: 15px;
+}
+input.searchmed{
+    margin-left: 1200px;
+}
+.header input{
+    padding: 5px;
+    font-size: 16px;
+}
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+.media-section {
+    margin-bottom: 40px;
+}
+.media-section h2 {
+    background-color: #f7e3a4;
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+}
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+.media-grid img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.media-grid video{
+    width: 100%;
+    height:100%;
+    border-radius: 10px;
+}
+/*.media-grid audio{
+    height: 20px;
+    width: 200px;
+    border-radius: 10px;
+}*/
